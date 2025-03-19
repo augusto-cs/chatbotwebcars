@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebCars - Encontre o carro ideal</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script> 
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">WebCars</div>
+            <ul>
+                <li><a href="compras.html">Comprar</a></li>
+                <li><a href="vendas.html">Vender</a></li>
+                <li><a href="serviços.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="banner">
+        <h1>Encontre o carro ideal para você</h1>
+        <p>Os melhores veículos para o seu estilo</p>
+        <button onclick="scrollToSearch()">Buscar Agora</button>
+    </section>
+    
+    <section class="search-box">
+        <input type="text" id="search-input" placeholder="Digite marca ou modelo...">
+        <button onclick="buscarCarro()">Buscar</button>
+    </section>
+    
+    <section class="featured-cars">
+        <h2>Carros em Destaque</h2>
+        <div class="car-list" id="car-container">
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 WebCars - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
